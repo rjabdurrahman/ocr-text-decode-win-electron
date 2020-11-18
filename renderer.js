@@ -1,6 +1,20 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// No Node.js APIs are available in this process because
-// `nodeIntegration` is turned off. Use `preload.js` to
-// selectively enable features needed in the rendering
-// process.
+const { exec } = require('child_process');
+
+function $(seletor) {
+    return document.querySelector(seletor);
+}
+
+function eventBinder(selector, action, f) {
+    $(selector).addEventListener(action, f);
+}
+
+eventBinder('#convert', 'click', function() {
+    let imgPath = $('#img').files[0].path;
+    exec(`tesseract ${imgPath} stdout`, (error, stdout) => {
+        if (error) {
+          console.error(`exec error: ${error}`);
+          return;
+        }
+        $('#txt').value = stdout;
+      });
+})

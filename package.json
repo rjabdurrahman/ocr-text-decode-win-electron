@@ -20,5 +20,7 @@
     "electron": "^11.0.0",
     "electron-reloader": "^1.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
 }

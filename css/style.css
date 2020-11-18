@@ -2,6 +2,12 @@ body {
   background-color: white;
 }
 
+body .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body h1 {
   margin: 0;
   padding: 0;
