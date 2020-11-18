@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "ocr-text-decode-win-electron",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/rjabdurrahman/ocr-text-decode-win-electron",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +17,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^11.0.0"
-  }
+    "electron": "^11.0.0",
+    "electron-reloader": "^1.0.1"
+  },
+  "dependencies": {}
 }

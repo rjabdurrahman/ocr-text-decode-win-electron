@@ -1,0 +1,14 @@
+body {
+  background-color: white;
+}
+
+body h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body input[type="file"] {
+  display: block;
+  background-color: lightgray;
+}
+/*# sourceMappingURL=style.css.map */
